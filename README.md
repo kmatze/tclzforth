@@ -58,7 +58,7 @@ tclzforth you can compile with gcc. See the batch file compile_tclzforth.bat
    3. source tclzforth_tcl.tcl    // load tclzforth.dll, set the environment and load tclforth.tcl
                                   // show "welcome-screen" of tclzforth
 ```
-
+![tclzforth](/tclzforth.GIF)
 
 **With the next steps you can create your own execute zForth (no tcl system!):**
 ```
