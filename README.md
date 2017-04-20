@@ -1,8 +1,7 @@
 tclzForth
 =========
 
-tclzForth is a tcl package based on zForth by Ico Doornekamp alias zevv (see github)
-for the windows system. 
+tclzForth is a tcl package for the windows system based on zForth by Ico Doornekamp aka zevv (see github).
 
 For zForth inside read the documentation in zForth-master.
 
@@ -59,6 +58,8 @@ tclzforth you can compile with gcc. See the batch file compile_tclzforth.bat
    3. source tclzforth_tcl.tcl    // load tclzforth.dll, set the environment and load tclforth.tcl
                                   // show "welcome-screen" of tclzforth
 ```
+
+
 **With the next steps you can create your own execute zForth (no tcl system!):**
 ```
    1.  zf {: FMAIN 1 1 + . ; }                 // your are inside zForth -> define "autostart" word
