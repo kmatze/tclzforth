@@ -1,0 +1,27 @@
+: UM/MOD
+    2DUP U<
+    IF NEGATE
+        15 FOR
+            >R DUP UM+
+                >R >R DUP UM+
+                R> + DUP R> R@ SWAP
+            >R UM+
+            R> OR
+                IF >R DROP 1+ R>
+                ELSE DROP
+            THEN R>
+        NEXT DROP SWAP EXIT
+    THEN DROP 2DROP -1 DUP ;
+: M/MOD
+    DUP 0< DUP >R
+        IF NEGATE >R
+            DNEGATE R>
+        THEN >R DUP 0<
+        IF R@ +
+        THEN R> UM/MOD
+    R>
+    IF SWAP NEGATE SWAP THEN ;
+
+: /MOD OVER 0< SWAP M/MOD ;
+: MOD /MOD DROP ;
+: / /MOD NIP ;
