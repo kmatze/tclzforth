@@ -3,6 +3,8 @@ tclzForth
 
 tclzForth is a tcl package for the windows system based on zForth by Ico Doornekamp aka zevv (see github).
 
+tclzforth is a hobby project with no warrenty.
+
 For zForth inside read the documentation in zForth-master.
 
 I've changed a little bit the command line of zForth system:
